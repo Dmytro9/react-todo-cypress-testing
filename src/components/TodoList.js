@@ -7,7 +7,7 @@ const TodoItem = (props) => (
         className="toggle"
         type="checkbox"
         checked={props.isCompleted}
-        onClick={() => props.handleToggle(props.id)}
+        onChange={() => props.handleToggle(props.id)}
       />
       <label>{props.name}</label>
       <button

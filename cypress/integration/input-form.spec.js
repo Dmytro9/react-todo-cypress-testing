@@ -23,7 +23,7 @@ describe("Input form", () => {
       cy.route("POST", "/api/todos", {
         name: itemText,
         id: 1,
-        isComplete: false,
+        isCompleted: false,
       });
       cy.get(".new-todo")
         .type(itemText)
